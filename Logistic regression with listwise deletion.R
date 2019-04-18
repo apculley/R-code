@@ -69,9 +69,3 @@ plot(allEffects(model), ylab= 'Probability of Hot Temperature')
 air=air[c('Temp_cat','Month','Ozone_cat','Solar.R','Wind')]
 newdata1 <- with(air,data.frame(age = mean(Solar.R),Year= mean(Wind),each=20), Q27=rep(levels(air$Month),10),Q26_col=rep(c('American Indian','non-Indian'),20))
 newdata1$rankP <- predict(model, newdata = newdata1, type = "response")
-
-newdata1$SSRU_cat<-factor(paste(newdata1$Year,newdata1$Q26_col))
-newdata1$SSRU_cat<-factor(newdata1$SSRU_cat, levels =  c("2015 American Indian","2017 American Indian" , "2015 non-Indian","2017 non-Indian"))
-#levels(newdata1$SSRU_cat) <- c("2015 American Indian","2017 American Indian" , "2015 non-Indian","2017 non-Indian")
-
-
