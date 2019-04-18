@@ -3,7 +3,7 @@ library(ResourceSelection)
 library(ggplot2)
 library(broom)
 library(car)
-candy<-read.csv('/home/thyme/Consulting/Resources/R-Code/From Helen Reach Project/candy-data.csv')
+candy<-read.csv('~/candy-data.csv')
 #look at variable names
 colnames(candy)
 #look at data structure
