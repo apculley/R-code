@@ -1,7 +1,7 @@
 library(readxl)
 
 # assigns the excel file path to a variable name path (not necessary, just saves typing it repeatedly)
-path <-'/home/thyme/Consulting/Presentations and Workshops/R Workshop Michelle Brian/County Unemplyment Data/Labor Force Data by County All Years.xlsx'
+path <-'/filepath/Labor Force Data by County All Years.xlsx'
 
 #creates list of sheet names in the excel file
 sheet_list<-excel_sheets(path)
